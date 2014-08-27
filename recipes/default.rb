@@ -50,5 +50,5 @@ end
 ## restart cron
 service 'cron' do
   action :nothing
-  supports restart: true
+  supports :restart => true
 end
