@@ -1,5 +1,5 @@
-h2. nmap Cookbook
-
+nmap Cookbook
+-------------
 Installs nmap and creates html output of ping scan
 
 **Requirements**
