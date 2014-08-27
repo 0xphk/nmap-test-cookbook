@@ -1,7 +1,6 @@
-nmap Cookbook
-=============
-Installs nmap and creates html output of ping scan
+h2. nmap Cookbook
 
+Installs nmap and creates html output of ping scan
 
 **Requirements**
 
@@ -9,36 +8,19 @@ chef-client or chef-solo
 
 **Attributes**
 
-TODO: List your cookbook attributes here.
-
-e.g.
-#### nmap::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['nmap']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+TODO
 
 **Usage**
 
-# nmap::default
+`nmap::default`
 
 Just include `nmap` in your node's `run_list`:
 
-`knife node run list add $node "recipe[nmap]"
+*`knife node run list add $node "recipe[nmap]"`*
 
 ```json
 {
-  "name":"my_node",
+  "name":"$node",
   "run_list": [
     "recipe[nmap]"
   ]
