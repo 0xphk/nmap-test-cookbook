@@ -26,7 +26,7 @@ begin
   Kitchen::RakeTasks.new
 
   desc 'Alias for kitchen:all'
-  task :default => :test
+  #task :default => :test
   task :integration => 'kitchen:all'
 #  task :test_all => [:test, :integration]
 rescue LoadError
