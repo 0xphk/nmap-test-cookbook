@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'test-kitchen', '~> 1.0'
 gem 'rubocop', '~> 0.18.0'
-
+gem 'rspec'
 #group :test do
 #  gem 'foodcritic', '~> 3.0'
 #  gem 'license_finder', '~> 0.9.5.1'
