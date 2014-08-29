@@ -1,5 +1,5 @@
 #require 'foodcritic'
-require 'rspec/core/rake_task'
+#require 'rspec/core/rake_task'
 #require 'rubocop/rake_task'
 
 #desc 'Run RuboCop style and lint checks'
@@ -26,7 +26,7 @@ begin
   Kitchen::RakeTasks.new
 
   desc 'Alias for kitchen:all'
-  #task :default => :test
+  task :default => :integration
   task :integration => 'kitchen:all'
 #  task :test_all => [:test, :integration]
 rescue LoadError
