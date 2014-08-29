@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-#gem 'rake'
+gem 'rake'
 gem 'test-kitchen', '~> 1.0'
 gem 'rubocop', '~> 0.18.0'
 
