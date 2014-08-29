@@ -4,7 +4,8 @@ Installs nmap and creates html output of ping scan
 
 **Requirements**
 
-chef-client or chef-solo
+chef-client or chef-solo, 
+running webserver with root in /var/www/ [optional]
 
 **Attributes**
 
