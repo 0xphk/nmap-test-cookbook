@@ -26,6 +26,7 @@ directory '/var/www/nmap' do
   group 'root'
   mode '0755'
   action :create
+  recursive true
 end
 
 ## create output html if not exist
