@@ -1,12 +1,42 @@
-require 'foodcritic'
+require "bundler/setup"
 
-desc 'Run Foodcritic lint checks'
-FoodCritic::Rake::LintTask.new(:foodcritic) do |t|
-  t.options = {
-    :fail_tags => ['any'],
-    :tags => []
-  }
+task :default => [:list]
+
+desc "Lists all the tasks."
+task :list do
+  puts "Tasks: \n- #{(Rake::Task.tasks).join("\n- ")}"
 end
 
-desc 'Run test'
-task :default => :foodcritic
+desc "Checks for required dependencies."
+task :check do
+  puts "Nothing to do yet..."
+end
+
+desc "Builds the package."
+task :build do
+  puts "Nothing to do yet..."
+end
+
+desc "Fires up the Vagrant box."
+task :start do
+  puts "Nothing to do yet..."
+  #exec "vagrant up"
+end
+
+#task :default => :knife_test
+
+#desc "Runs knife cookbook test against the cookbook."
+#task :knife_test do
+#  sh "bundle exec knife cookbook test nmap"
+#end
+
+#desc "Runs knife cookbook test with custom knife.rb"
+#task :knife_test_ci do
+#  sh "bundle exec knife cookbook test nmap -c test/.chef/knife.rb"
+#end
+
+#desc "Builds the package for ci server."
+#task :build_ci do
+#  Rake::Task[:knife_test_ci].execute
+#  Rake::Task[:foodcritic].execute
+#end
