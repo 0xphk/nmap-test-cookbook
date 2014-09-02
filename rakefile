@@ -10,4 +10,3 @@ end
 
 desc 'Run test'
 task :default => :foodcritic
-end
