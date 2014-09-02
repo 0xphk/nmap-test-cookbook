@@ -7,7 +7,7 @@ gemfile:
 
 script: 
   - bundle exec rake list
-  - bundle exec rake kitchen
+  #- bundle exec rake kitchen
 
 #rvm:
 #  - 1.9.2
